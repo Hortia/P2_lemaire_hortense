@@ -1,0 +1,602 @@
+/* 
+style.css
+---------
+Par Hortense Lemaire
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body
+{
+	display: flex;
+	font-family: Arial, Sans-Serif;
+}
+a
+{
+	color: black;
+	text-decoration-line: none; 
+}
+
+.section1
+{
+	background-color: #FFBE33; /* le fond de la section 1*/
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+.avatar
+{
+	display:flex;
+	height: 25.0rem;
+	justify-content: center;
+	align-items: center;
+}
+.avatar img
+{
+	display: block;
+    max-width: 100%;
+    border-radius: 100%;
+    border : 0.3rem grey solid;
+}
+.titrejaune
+{
+	color: #FFBE33;
+	font-size: 1.8rem;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: bold;
+	text-align:center;
+	display: block;
+	background-color: grey;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	text-transform: uppercase;
+}
+.contact
+{
+	list-style-type: none;
+	font-size: 1.2rem;
+	margin-top: 2.0rem;
+	margin-bottom: 2.0rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+#lille
+{
+	margin-bottom: 1.0rem;
+}
+#num
+{
+	margin-bottom: 1.0rem;
+}
+#mail
+{
+	margin-bottom: 1.0rem;
+}
+#lienlinkedin
+{
+	margin-bottom: 1.0rem;
+}
+p
+{
+	font-size: 1.4rem;/* paragraphes */
+	font-family: "Arial";
+	font-style: normal;
+	margin-bottom: 2.0rem;
+}
+.apropos
+{
+	margin-top: 2.0rem;
+	margin-bottom: 2.0rem;
+	font-size: 1.2rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+.hobbys
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	margin-top: 2.0rem;
+	margin-bottom: 2.0rem;
+	align-items: center;
+	color:black;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 2.5rem;
+}
+.placement
+{
+	margin-top: auto;
+}
+.section2
+{
+	display: flex;
+	flex-direction: column;
+	width: 69%;
+	margin-left: 3rem;
+	margin-right: 2.2rem;
+	margin-bottom: 7.0rem;
+	margin-top: 4.0rem;
+}
+.section2 i
+{
+	color: #FFBE33;
+	padding-right: 1rem;
+	font-size: 1.8rem;
+}
+.annees i
+{
+	color: #FFBE33;
+	padding-right: 1.2rem;
+	font-size: 1rem;
+}
+h1
+{
+	font-size: 3.5rem;
+	font-family: "Arial";
+	font-style: bold;
+	color: grey;
+	margin-top: 4.0rem;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+.prenom
+{
+	color: #FFBE33;
+}
+.section2 h2
+{
+	font-size: 1.9rem;
+	font-family: "Open Sans";
+	color:black;
+	margin-bottom: 12rem;
+}
+.underline
+{
+	border-bottom: 0.1rem solid #FFBE33;
+}
+.section2 h3
+{
+	display: block;
+	font-style: bold;
+	font-size: 1.6rem;
+	color:black;
+	font-family: "Open Sans";
+	margin-bottom: 2.0rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid #FFBE33;
+	text-transform: uppercase;
+}
+section
+{
+	display: flex;
+	flex-direction: row;
+}
+.annees
+{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-bottom: 1.2rem;
+	width: 26%;
+}
+.disque
+{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.1rem;
+}
+
+.diplome
+{
+	display: flex;
+	flex-direction: column;
+	position: right 40.0rem;
+	font-size:0.8rem;
+	margin-bottom: 1.2rem;
+	width: 70%;
+	letter-spacing: 1px; 
+}
+h4
+{
+	font-size: 1.4rem;
+	margin-bottom: 0.8rem; 
+}
+h5
+{
+	font-size: 1.2rem;
+	margin-bottom: 0.8rem;
+}
+.recommandations
+{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.2rem;
+}
+.recommandations ul
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.recommandations ul li:first-child
+{
+	text-transform: uppercase;
+	margin-bottom: 1.0rem;
+}
+.recommandations li
+{
+	margin-bottom: 0.3rem;
+}
+.experience
+{
+	display: flex;
+	flex-direction: column;
+	position: right 40.0rem;
+	font-size:1.1rem;
+	margin-bottom: 1.2rem; 
+	letter-spacing: 1px;
+	width: 70%;
+}
+
+
+@media all and (max-width: 1366px)
+{
+	body
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+		.section1
+		{
+			flex-direction: column;
+			width: 100%;
+			font-size: 3rem;
+		}
+		.apropos
+		{
+			padding: 0.1rem;
+			font-size: 2rem;
+		}
+		.contact
+		{
+			padding: 0.1rem;
+			font-size: 2rem;
+		}
+		.hobbys
+		{
+			font-size: 4.0rem;
+			color: black;
+		}
+		.section2
+		{
+			flex-direction: column;
+			width: auto;
+		}
+		section
+		{
+			flex-direction: column;
+		}
+		h4
+		{
+			font-size: 2rem;
+		}
+		.annees
+		{
+			width: 100%;
+		}
+		.annees li
+		{
+			font-size: 2rem;
+		}
+		.annees i
+		{
+			padding-right: 2rem;
+		}
+		h5
+		{
+			font-size: 1.5rem;
+		}
+		.diplome
+		{
+			width: auto;
+			font-size: 2rem;
+		}
+		.recommandations
+		{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: center;
+		}
+		.recommandations ul
+		{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0.8rem;
+			width: 50%;
+		}	
+		.experience
+		{
+			width: 100%;
+		}
+}
+@media all and (max-width: 1000px)
+{
+	body
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+		.section1
+		{
+			flex-direction: column;
+			width: 100%;;
+		}
+		.section1 h3
+		{
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+		.apropos
+		{
+			padding: 0 1rem;
+			font-size: 2rem;
+		}
+		.contact
+		{
+			padding: 0 1rem;
+			font-size: 2rem;
+		}
+		.hobbys
+		{
+			font-size: 4.0rem;
+			color: black;
+		}
+		.section2
+		{
+			flex-direction: column;
+			width: auto;
+		}
+		h1
+		{
+			font-size: 4.3rem;
+		}
+		.section2 h2
+		{
+			font-size: 3.8rem;
+		}
+		.section2 h3
+		{
+			font-size: 3rem;
+			margin-bottom: 5rem;
+		}
+		.section2 i
+		{
+			font-size: 3rem;
+		}
+		p
+		{
+			padding-top: 1.5rem;
+			font-size: 2rem;
+			padding-bottom: 1.5rem;
+		}
+		section
+		{
+			flex-direction: column;
+		}
+		.annees
+		{
+			width: 100%
+		}
+		.formations
+		{
+			padding-bottom: 2rem;
+		}
+		.diplome
+		{
+			width: 100%;
+		}
+		.experience
+		{
+			width: 100%;
+		}
+		h4
+		{
+			font-size: 2.5rem;
+			margin-bottom: 1.3rem;
+			text-transform: uppercase;
+		}
+		.annees i
+		{
+			padding-right: 2rem;
+			font-size: 2rem;
+		}
+		h5
+		{
+			font-size: 2rem;
+			padding-bottom: 1rem;
+			text-transform: uppercase;
+		}
+		.recommandations
+		{
+			display: flex;
+			flex-direction: column;
+		}
+		.recommandations ul
+		{
+			width: 100%;
+			margin-bottom: 3rem;
+		}
+		.recommandations li
+		{
+			margin-bottom: 0.8rem;
+			font-size: 2rem;
+		}	
+}
+@media all and (max-width: 700px)
+{
+	body
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+		.section1
+		{
+			flex-direction: column;
+			width: 100%;;
+		}
+		.section1 h3
+		{
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+		}
+		.apropos
+		{
+			padding: 0 1rem;
+			font-size: 2rem;
+		}
+		.contact
+		{
+			padding: 0 1rem;
+			font-size: 2rem;
+		}
+		.hobbys
+		{
+			font-size: 3.0rem;
+			color: black;
+		}
+		.section2
+		{
+			flex-direction: column;
+			width: auto;
+		}
+		h1
+		{
+			font-size: 4rem;
+		}
+		.section2 h2
+		{
+			font-size: 3rem;
+		}
+		.section2 h3
+		{
+			font-size: 2.5rem;
+			margin-bottom: 5rem;
+		}
+		.section2 i
+		{
+			font-size: 2.5rem;
+		}
+		p
+		{
+			padding-top: 1.5rem;
+			font-size: 2rem;
+			padding-bottom: 1.5rem;
+		}
+		section
+		{
+			flex-direction: column;
+		}
+		.annees
+		{
+			width: 100%
+		}
+		.formations
+		{
+			padding-bottom: 2rem;
+		}
+		.diplome
+		{
+			width: 100%;
+		}
+		.experience
+		{
+			width: 100%;
+		}
+		h4
+		{
+			font-size: 2.2rem;
+			margin-bottom: 1.3rem;
+			text-transform: uppercase;
+		}
+		.annees i
+		{
+			padding-right: 2rem;
+			font-size: 2rem;
+		}
+		h5
+		{
+			font-size: 2rem;
+			padding-bottom: 1rem;
+			text-transform: uppercase;
+		}
+		.recommandations
+		{
+			display: flex;
+			flex-direction: column;
+		}
+		.recommandations ul
+		{
+			width: 100%;
+			margin-bottom: 3rem;
+		}
+		.recommandations li
+		{
+			margin-bottom: 0.8rem;
+			font-size: 1.5rem;
+		}	
+}
+
