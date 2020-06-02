@@ -58,8 +58,14 @@ body
 }
 a
 {
-	color: black;
+	color: #4D5656;
 	text-decoration-line: none; 
+}
+a:hover
+{
+	color: black;
+	text-decoration: none;
+
 }
 
 .section1
@@ -124,7 +130,7 @@ a
 }
 p
 {
-	font-size: 1.4rem;/* paragraphes */
+	font-size: 1.1rem;/* paragraphes */
 	font-family: "Arial";
 	font-style: normal;
 	margin-bottom: 2.0rem;
@@ -152,6 +158,11 @@ p
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	font-size: 2.5rem;
+}
+.encadrement
+{
+	border-radius: 100%;
+	border: 0.2rem black solid;
 }
 .placement
 {
@@ -286,90 +297,6 @@ h5
 	margin-bottom: 1.2rem; 
 	letter-spacing: 1px;
 	width: 70%;
-}
-
-
-@media all and (max-width: 1366px)
-{
-	body
-	{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-		.section1
-		{
-			flex-direction: column;
-			width: 100%;
-			font-size: 3rem;
-		}
-		.apropos
-		{
-			padding: 0.1rem;
-			font-size: 2rem;
-		}
-		.contact
-		{
-			padding: 0.1rem;
-			font-size: 2rem;
-		}
-		.hobbys
-		{
-			font-size: 4.0rem;
-			color: black;
-		}
-		.section2
-		{
-			flex-direction: column;
-			width: auto;
-		}
-		section
-		{
-			flex-direction: column;
-		}
-		h4
-		{
-			font-size: 2rem;
-		}
-		.annees
-		{
-			width: 100%;
-		}
-		.annees li
-		{
-			font-size: 2rem;
-		}
-		.annees i
-		{
-			padding-right: 2rem;
-		}
-		h5
-		{
-			font-size: 1.5rem;
-		}
-		.diplome
-		{
-			width: auto;
-			font-size: 2rem;
-		}
-		.recommandations
-		{
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			justify-content: center;
-		}
-		.recommandations ul
-		{
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 0.8rem;
-			width: 50%;
-		}	
-		.experience
-		{
-			width: 100%;
-		}
 }
 @media all and (max-width: 1000px)
 {
@@ -599,4 +526,3 @@ h5
 			font-size: 1.5rem;
 		}	
 }
-
