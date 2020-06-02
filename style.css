@@ -85,9 +85,15 @@ a:hover
 .avatar img
 {
 	display: block;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 100%;
     border : 0.3rem grey solid;
+}
+.avatar a
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .titrejaune
 {
@@ -433,12 +439,12 @@ h5
 		.apropos
 		{
 			padding: 0 1rem;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		.contact
 		{
 			padding: 0 1rem;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		.hobbys
 		{
@@ -470,7 +476,7 @@ h5
 		p
 		{
 			padding-top: 1.5rem;
-			font-size: 2rem;
+			font-size: 1.5rem;
 			padding-bottom: 1.5rem;
 		}
 		section
@@ -523,6 +529,6 @@ h5
 		.recommandations li
 		{
 			margin-bottom: 0.8rem;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}	
 }
